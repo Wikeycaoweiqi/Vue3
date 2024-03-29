@@ -1,12 +1,15 @@
 <template>
   <div class="app">
     <h1>Hello Vue3</h1>
+    <Person/>
   </div>
 </template>
 
 <script lang='js'>
+import Person from "./components/1_import_component.vue"
 export default {
-  name: "App"
+  name: "App",
+  components: {Person}
 }
 </script>
 
