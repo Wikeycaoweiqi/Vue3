@@ -1,15 +1,17 @@
 <template>
   <div class="app">
     <h1>Hello Vue3</h1>
-    <Person/>
+    <Person1/>
+    <Person2/>
   </div>
 </template>
 
 <script lang='js'>
-import Person from "./components/1_import_component.vue"
+import Person1 from "./components/1_import_component.vue"
+import Person2 from "./components/2_declarative_rendering.vue"
 export default {
   name: "App",
-  components: {Person}
+  components: {Person1, Person2}
 }
 </script>
 
