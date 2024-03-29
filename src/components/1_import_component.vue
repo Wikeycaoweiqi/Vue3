@@ -1,26 +1,35 @@
 <template>
   <div class="person">
     <h2>name: {{ name }}</h2>
+    <button @click="changeName()">click to change name</button>
     <h2>gender: {{ gender }}</h2>
+    <h2>age: {{ age }}</h2>
     <button @click="showAge()">click to show age</button>
+    <button @click="changeAge()">click to change age</button>
   </div>
 </template>
 
-<script lang='js'>
+<script lang="js">
 export default {
-  name: 'Person',
-  data() {
-    return {
-      name: 'zhangsan',
-      age: '18',
-      gender: 'male'
-    }
-  },
-  methods: {
-    showAge() {
-      alert(this.age);
-    }
-  }
+  name: 'Person1'
+}
+</script>
+
+<script lang='js' setup>
+let name = 'zhangsan';
+let age = '18';
+let gender = 'male';
+
+function changeName() {
+  name = 'lisi';
+}
+
+function showAge() {
+  alert(age);
+}
+
+function changeAge() {
+  age += 1;
 }
 </script>
 
