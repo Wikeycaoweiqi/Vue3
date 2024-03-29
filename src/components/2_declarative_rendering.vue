@@ -28,7 +28,6 @@ function changeName() {
 
 function showAge() {
   alert(age.value);
-  console.log(age);
 }
 
 function changeAge() {
