@@ -4,6 +4,7 @@
     <Person1/>
     <Person2/>
     <Car1/>
+    <Car2/>
   </div>
 </template>
 
@@ -11,10 +12,11 @@
 import Person1 from "./components/1_import_component.vue"
 import Person2 from "./components/2_declarative_rendering_ref.vue"
 import Car1 from "./components/2_declarative_rendering_reactive.vue"
+import Car2 from "./components/2_declarative_rendering_ref_object.vue"
 
 export default {
   name: "App",
-  components: {Person1, Person2, Car1}
+  components: {Person1, Person2, Car1, Car2}
 }
 </script>
 
